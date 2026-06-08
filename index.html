@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> <span>AgroForte</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-menu" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="btn-principal">Descubra Como</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="container">
+        <h2 class="titulo-secao">Nossos Pilares</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <i class="fa-solid fa-seedling acento-icone"></i>
+                <h3>Produção Consciente</h3>
+                <p>Uso de técnicas que mantêm o solo rico e produtivo para as próximas gerações, evitando o esgotamento de recursos.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-droplet acento-icone"></i>
+                <h3>Gestão Hídrica</h3>
+                <p>Sistemas de irrigação inteligente e gotejamento que reduzem o desperdício de água em até 60%.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-solar-panel acento-icone"></i>
+                <h3>Energia Limpa</h3>
+                <p>Integração de painéis solares e biomassa para alimentar as operações agrícolas com zero emissão de carbono.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="bg-alternativo">
+        <div class="container dois-campos">
+            <div class="imagem-texto">
+                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=600&q=80" alt="Tecnologia no Campo">
+            </div>
+            <div class="conteudo-texto">
+                <h2>Tecnologia a favor da Natureza</h2>
+                <p>A agricultura moderna não precisa ser inimiga do meio ambiente. Através de drones, sensores de solo e inteligência artificial, conseguimos aplicar fertilizantes e defensivos de forma cirúrgica, apenas onde é necessário.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Redução de impactos ambientais</li>
+                    <li><i class="fa-solid fa-check"></i> Monitoramento em tempo real da saúde da lavoura</li>
+                    <li><i class="fa-solid fa-check"></i> Maximização de colheitas em espaços otimizados</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container">
+        <h2 class="titulo-secao">Junte-se ao Movimento</h2>
+        <p class="subtitulo">Quer saber como transformar sua produção ou apoiar o agro sustentável? Fale conosco!</p>
+        
+        <form id="form-contato" class="form-sustentavel">
+            <div class="grupo-campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome completo">
+            </div>
+            <div class="grupo-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+            </div>
+            <div class="grupo-campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" required placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+        <div id="mensagem-sucesso" class="escondido">
+            <p><i class="fa-solid fa-circle-check"></i> Obrigado! Sua mensagem foi enviada com sucesso.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroForte Sustentável. Cultivando um amanhã melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

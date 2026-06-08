@@ -1,0 +1,303 @@
+/* Configurações Gerais e Resets */
+:root {
+    --cor-primaria: #2e7d32; /* Verde Agro */
+    --cor-secundaria: #1b5e20; /* Verde Escuro */
+    --cor-acento: #81c784; /* Verde Claro */
+    --cor-fundo: #f4f7f4; /* Branco acinzentado suave */
+    --cor-texto: #333333;
+    --cor-branca: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-branca);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--cor-primaria);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-branca);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Títulos de Seção */
+.titulo-secao {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--cor-secundaria);
+    position: relative;
+}
+
+.titulo-secao::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-primaria);
+    margin: 10px auto 0 auto;
+}
+
+/* Grid de Cards (Pilares) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--cor-branca);
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.acento-icone {
+    font-size: 40px;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Seção Alternativa (Dois Campos / Tecnologia) */
+.bg-alternativo {
+    background-color: #e8f5e9;
+}
+
+.dois-campos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.imagem-texto img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.conteudo-texto h2 {
+    font-size: 32px;
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+}
+
+.conteudo-texto ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.conteudo-texto ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.conteudo-texto ul li i {
+    color: var(--cor-primaria);
+    margin-right: 10px;
+}
+
+/* Formulário de Contato */
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-sustentavel {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--cor-branca);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.grupo-campo input:focus, .grupo-campo textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+#mensagem-sucesso {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade (Telas menores/Celulares) */
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Em um projeto real mais complexo, aqui entraria o menu hamburguer móvel */
+    }
+    
+    .dois-campos {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudo-texto ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
